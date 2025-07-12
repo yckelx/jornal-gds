@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal GdS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Slab:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto Slab', serif;
+            background-color: #f4f1ea;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 5px double #333;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 6em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.5em;
+            color: #555;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+
+        .newspaper-body {
+            column-count: 2;
+            column-gap: 40px;
+            column-rule: 1px solid #eee;
+        }
+
+        .newspaper-body h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            color: #000;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            break-before: column; /* Evita que o título comece no final de uma coluna */
+        }
+        
+        .main-headline {
+            column-span: all;
+        }
+        
+        .main-headline h3 {
+            font-size: 2.8em;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+        
+        p.quote {
+            font-style: italic;
+            border-left: 3px solid #ccc;
+            padding-left: 15px;
+            margin-left: 10px;
+            color: #555;
+        }
+        
+        p.author {
+            text-align: right;
+            font-weight: bold;
+            font-style: normal;
+            margin-top: -10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Jornal GdS</h1>
+            <h2 id="current-date"></h2>
+            <script>
+                const date = new Date('2025-07-13T12:00:00Z');
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                document.getElementById('current-date').textContent = "Edição de " + date.toLocaleDateString('pt-BR', options);
+            </script>
+        </header>
+
+        <div class="newspaper-body">
+            <section class="main-headline">
+                <h3>WEB-ENCONTRO DO SÉCULO: Cecília Desafia o Perigo e Vai ao Encontro de Namorado Misterioso! Será o Maníaco do Parque? 😱</h3>
+                <p>Dando sequência à fofoca de ontem, que parou o grupo, a intrépida Cecília˚꩜｡ confirmou que está a caminho do encontro com seu webnamorado, cuja identidade permanece um mistério digno de um romance policial. Com um aviso que gelou a espinha dos mais sensíveis, ela declarou: "To indo encontrar meu webnamorado se eu sumir ja sabem". O pânico se instaurou. As especulações correm soltas: seria ele um membro secreto do grupo? Um bilionário excêntrico? Ou, como sugeriu o sempre otimista Leo, "o maníaco do parque ta webnamorando"? Enquanto a nação GdS prende a respiração, Cecília prometeu enviar fotos "qnd eu ver ele", um ato de bravura que pode ser seu último. Estamos na torcida... por mais fofoca, claro. 🙏</p>
+            </section>
+
+            <section>
+                <h3>FOFOCA & STALKING 🕵️‍♀️</h3>
+                <p>Em um episódio que abalou as frágeis estruturas sociais do grupo, a recém-chegada ~Sahra manifestou um interesse investigativo na vida pessoal alheia. O alvo? A ex-namorada de Francesco. "Vou pedir para seguir ela. Será que sou aceita?", perguntou a inocente (ou não tão inocente assim) Sahra. A resposta de Francesco foi digna de um capo da máfia: "ela só aceita se eu deixar 😌". A ousadia, no entanto, despertou a fúria de Leo, o autoproclamado fiscal da privacidade. "Praq ir atras da vida pessoal dos outros? parece stalker", bradou, indignado. A discussão se estendeu, com Sahra alegando que só queria "amigar". Fontes indicam que o conceito de "amizade" no grupo é tão complexo quanto a física quântica. 🤔</p>
+            </section>
+
+            <section>
+                <h3>O FILÓSOFO DE BOTECO 🧐</h3>
+                <p>Qual o valor de um centímetro? Cecília˚꩜｡, em um momento de profunda reflexão, lançou a pergunta que parou o servidor: "tu preferia ter 157cm e ser bonito ou ter 180+cm e ser feio?". O debate que se seguiu revelou pérolas da sabedoria popular. Apolo, pragmático, optou pelos "180 e ser feio", pois, segundo ele, "Da pra amenizar".</p>
+                <p>A analista econômica Izaa trouxe uma perspectiva de carreira surpreendente: </p>
+                <p class="quote">"180 feio parece ogro mas 157 tb n da... 157 vc pelo menos ganha dinheiro sendo viado na net"</p>
+                <p>Fechando a discussão, Felipe aplicou um choque de realidade devastador: "1,80 e feio é a situação de todo mundo aqui no grupo". Silêncio no recinto. 🎤💥</p>
+            </section>
+
+            <section>
+                <h3>ANÁLISE GEOPOLÍTICA DA PAQUERA 🗺️</h3>
+                <p>Do debate sobre altura, emergiram teorias complexas sobre o mercado afetivo global. Apolo, nosso correspondente internacional autodeclarado, defende a "Teoria da Vantagem Exótica": um indivíduo fenotipicamente raro em uma região (um "negrão na Alemanha" ou "um loiro no Brasil") teria sucesso garantido. "Joga a Iza lá no meio dos curumins ela vai voltar assediada, agora joga a Iza no meu do sul e feijoada", argumentou, com uma lógica geográfica impecável.</p>
+                <p>Leo, cético, rebateu citando o guru Raiam, afirmando que o sucesso não é pela aparência, mas porque "europeu é tudo introvertido e n chegam nas meninas". A discussão atingiu seu ápice com a analogia brilhante de Fabio: </p>
+                <p class="quote">"Ele é exótico na gringa, como a Inês Brasil é na Alemanha."</p>
+                <p>Enquanto isso, Francesco culpou a imigração interna pela diminuição da média de altura no sul, em um comentário que fez o IBGE repensar todos os seus censos. 🤦‍♂️</p>
+            </section>
+
+            <section>
+                <h3>POLÊMICA DO DIA: ANIVERSÁRIO OU GOLPE? 🚨</h3>
+                <p>O dia começou com um apelo de ~Sahra por felicitações ao nobre Apolo de Lima. A reação do público foi, no mínimo, duvidosa. "Até parece que esse cara faz aniversário hoje", comentou Wesley Villalba, expressando o sentimento geral de desconfiança. Ignorando os céticos, Apolo não apenas aceitou os parabéns, mas também revelou um fato bombástico:</p>
+                <p class="quote">"e o twice que faria o comeback dia 3 de julho mas decidiram adiar pra hoje por conta do meu aniversario"</p>
+                <p class="author">- Apolo de Lima, humildemente.</p>
+                <p>A revelação de que um dos maiores grupos de K-Pop do mundo altera sua agenda por causa de um membro do GdS ainda está sendo verificada por nossa equipe. Felipe aproveitou para relembrar o dia em que "roubei o aniversário do francesco porque todo mundo achava que era o meu". Aparentemente, datas comemorativas neste grupo são um recurso disputado. 🎂❓</p>
+            </section>
+
+            <section>
+                <h3>CLASSIFICADOS GdS 💼</h3>
+                <p><b>PROCURA-SE EMPREGO (OU CAOS):</b> Fabio anuncia novas ambições de carreira: "Vou ser eletricista ou um bioterrorista". Interessados em qualquer uma das duas áreas, favor contatar. O risco é por sua conta. ⚡☣️</p>
+                <p><b>PROPOSTA IRRECUSÁVEL:</b> Holanda segue em sua cruzada romântica para conquistar ~Sahra, com propostas ousadas como "imagina tu pagando meu uber pra ir na tua casa ida e volta tu pagando ifood pra mim". Um verdadeiro príncipe moderno. 👑</p>
+                <p><b>HOSPEDAGEM CULTURAL:</b> Cecília˚꩜｡, em um ato de generosidade, oferece sua residência em SP para fãs de Bladee e Twice que forem aos shows. "Eu abrigo. De vdd pd vir", garantiu. Oportunidade única de presenciar as fofocas em primeira mão. 🏠🎤</p>
+                <p><b>VAGA DE MERGULHADOR SUICIDA:</b> Leo anuncia seu plano de carreira: "vou virar mergulhador de estacao de petroleo e morrer em trabalho". Uma inspiração para todos nós.</p>
+            </section>
+
+            <section>
+                <h3>ARQUIVO CONFIDENCIAL & INTRIGAS 📜</h3>
+                <p>O dia foi um prato cheio para os arqueólogos do grupo, que desenterraram dramas há muito esquecidos. A "talaricagem" entre Cecília, Arkmidius e a misteriosa Flos foi revisitada, com Arkmidius confessando que a paixão de Flos acabou quando "ela não sabia quando ficou sabendo parou de gostar de mim". Cecília, por sua vez, revelou uma escolha do passado: "Eu tava entre arthur e apolo mas escolhi o arthur n me arrependo".</p>
+                <p>Apolo, sempre analítico, diagnosticou o comportamento de Cecília: "A Cecília só gasta do cara se ele já tiver outra mulher". Uma tese que, segundo Izaa, tem respaldo em Lacan. A complexa teia de webnamoros passados de Apolo foi mais uma vez mencionada, com a regra implícita: "N pode falar de ex do apolo no grupo". Aparentemente, a regra não é muito seguida. 🤫</p>
+            </section>
+        </div>
+
+        <footer>
+            <p>Jornal GdS - A Verdade, Mesmo que Ela Seja Ridícula e Ninguém Tenha Pedido. © 2025</p>
+        </footer>
+    </div>
+
+</body>
+</html>
