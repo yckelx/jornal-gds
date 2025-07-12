@@ -6,17 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumário - O Diário do Zap</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 2em; background-color: #f9f9f9; }
-        h1 { text-align: center; color: #333; }
-        ul { list-style-type: none; padding: 0; }
-        li { background-color: #fff; margin-bottom: 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        a { display: block; padding: 15px 20px; text-decoration: none; color: #0056b3; }
-        a:hover { background-color: #e9ecef; }
-        strong { color: #000; }
-        small { color: #6c757d; display: block; margin-top: 5px; font-size: 0.9em; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 1em 2em;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        h1 {
+            text-align: center;
+            color: #343a40;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+        }
+        details {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        details.mes-details {
+            margin-left: 20px;
+            border-left: 3px solid #007bff;
+        }
+        summary {
+            font-weight: bold;
+            padding: 15px;
+            cursor: pointer;
+            outline: none;
+            font-size: 1.5em; /* Tamanho para o Ano */
+            color: #495057;
+        }
+        details.mes-details > summary {
+            font-size: 1.2em; /* Tamanho para o Mês */
+            color: #0056b3;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0 15px 15px 15px;
+            margin: 0;
+        }
+        li {
+            background-color: #f8f9fa;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        li:hover {
+            background-color: #e9ecef;
+        }
+        a {
+            display: block;
+            padding: 12px 18px;
+            text-decoration: none;
+            color: #495057;
+        }
+        strong {
+            color: #000;
+        }
+        small {
+            color: #6c757d;
+            display: block;
+            margin-top: 4px;
+            font-size: 0.85em;
+        }
     </style>
 </head>
 <body>
     <h1>Arquivo de Edições - O Diário do Zap 📰</h1>
+    
+    <details class="ano-details" open>
+      <summary>2025</summary>
+      <details class="mes-details" open>
+        <summary>Julho</summary>
+        <ul>
+          <li>
+            <a href="edicoes/2025-07-12.html">
+              <strong>12/07/2025:</strong> O retorno de ex-namoradas e múltiplos triângulos amorosos entre membros do grupo, incluindo Francesco Ferrari, Mike, Ellen, Madu e Alison, geram grande fofoca.
+              <small>(Envolvidos: Apolo de Lima, Renata Kaneshiro, Francesco Ferrari, Cecília˚꩜｡, Holanda, Leo, Izaa, Arthur, Mike, Ellen, Madu, Alison, Lucas Neves, Sahra, Wesley Villalba)</small>
+            </a>
+          </li>
+          <li>
+            <a href="edicoes/2025-07-11.html">
+              <strong>11/07/2025:</strong> A volta de Renata Kaneshiro, ex de Francesco Ferrari, e a revelação de um complexo triângulo amoroso envolvendo Mike, Ellen, Madu e Alison, agitam o grupo com segredos e traições.
+              <small>(Envolvidos: Renata Kaneshiro, Francesco Ferrari, Apolo de Lima, Cecília˚꩜｡, Holanda, Mike, Ellen, Madu, Alison, Izaa, Felipe, Wesley Villalba, Lucas, Lucker12)</small>
+            </a>
+          </li>
+        </ul>
+      </details>
+    </details>
 </body>
 </html>
